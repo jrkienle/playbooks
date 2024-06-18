@@ -78,7 +78,19 @@ than installing each individual piece. To run a playbook, run the following comm
 replacing `<playbook-name>.yml` with the name of the actual playbook, i.e. `dev-web.yml`):
 
 ```bash
-ansible-playbook ./playbooks/<playbook-name>.yml
+ansible-playbook ./<playbook-name>.yml
 ```
 
 With that in mind, run playbooks to your heart's content!
+
+## Available Playbooks
+
+The following playbooks are available to be ran!
+
+<details>
+  <summary>dev-core.yml</summary>
+  
+  This playbook installs my preferred Terminal emulator (iTerm2 for MacOS, Windows Terminal for
+  Windows) and sets up Oh My Zsh with my preferred config. It also installs Visual Studio Code,
+  GitHub Desktop, and the GitHub CLI.
+</details>

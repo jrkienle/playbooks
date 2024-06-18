@@ -1,0 +1,10 @@
+- name: Core Dev Tools
+  hosts: all
+  vars_files:
+    - default.config.yml
+  tasks:
+    # - import_tasks: tasks/package-manager.yml
+    - name: Check OS version
+      debug: var=ansible_os_family
+    - name: Install Package Manager
+      install_package_manager: ""
