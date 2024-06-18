@@ -1,0 +1,10 @@
+# This file tells Ansible to run all of our playbooks on the local machine. This needs to be
+# explicitly configured since Ansible is technically designed to be ran over a network of
+# multiple machines (i.e. setting up a fleet of AWS EC2 instances during deployments). The "all"
+# key at the top of the file is important as that's the name of the network group. You'll see
+# that in-use in the 3rd line of each playbook
+all:
+  hosts:
+    local_machine:
+      ansible_connection: local
+      ansible_host: 127.0.0.1
