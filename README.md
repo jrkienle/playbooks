@@ -69,3 +69,16 @@ To get this thing set up, clone the repo and run one of following commands (depe
 
 Wow, that was super easy! Don't you love not having to think about anything when setting up a
 machine?
+
+## Running Playbooks
+
+If you've never used Ansible before, it's pretty damn cool. Every piece of configuration is stored
+in a "playbook". I wanted to make this repo as modular as possible while still being less effort
+than installing each individual piece. To run a playbook, run the following command (obviously
+replacing `<playbook-name>.yml` with the name of the actual playbook, i.e. `dev-web.yml`):
+
+```bash
+ansible-playbook ./playbooks/<playbook-name>.yml
+```
+
+With that in mind, run playbooks to your heart's content!
